@@ -1,0 +1,31 @@
+{
+  "name": "elm-tachyons-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple setup for two fantastically functional frontend technologies",
+  "main": "index.js",
+  "scripts": {
+    "watch:css-elm": "npm run watch && npm run css",
+    "watch:elm": "chokidar '**/*.elm' -c 'elm make app/elm/Main.elm --output public/app.js' --initial",
+    "watch:css": "postcss --watch --config ./postcss-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewMacmurray/elm-tachyons-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewMacmurray/elm-tachyons-boilerplate/issues"
+  },
+  "homepage": "https://github.com/andrewMacmurray/elm-tachyons-boilerplate#readme",
+  "dependencies": {
+    "tachyons-custom": "^4.5.4"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "postcss-cli": "^2.6.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-import": "^9.1.0"
+  }
+}
