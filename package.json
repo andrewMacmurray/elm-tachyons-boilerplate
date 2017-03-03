@@ -4,7 +4,7 @@
   "description": "A simple setup for two fantastically functional frontend technologies",
   "main": "index.js",
   "scripts": {
-    "watch:css-elm": "npm run watch && npm run css",
+    "watch": "npm run watch:elm & npm run watch:css",
     "watch:elm": "chokidar '**/*.elm' -c 'elm make app/elm/Main.elm --output public/app.js' --initial",
     "watch:css": "postcss --watch --config ./postcss-config.js"
   },
