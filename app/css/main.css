@@ -47,10 +47,4 @@
 @import 'tachyons-custom/src/_z-index';
 
 /* custom variables */
-@import './borders.css';
-@import './breakpoints.css';
-@import './colors.css';
-@import './font-family-defaults.css';
-@import './font-sizes.css';
-@import './shadows.css';
-@import './spacing.css';
+@import './_variables';
