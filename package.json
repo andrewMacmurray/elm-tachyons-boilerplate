@@ -4,9 +4,9 @@
   "description": "A simple setup for two fantastically functional frontend technologies",
   "main": "index.js",
   "scripts": {
-    "watch": "npm run watch:elm & npm run watch:css",
-    "watch:elm": "chokidar '**/*.elm' -c 'elm make app/elm/Main.elm --output public/app.js' --initial",
-    "watch:css": "postcss --watch --config ./postcss-config.js"
+    "watch": "npm run live & npm run css",
+    "live": "elm-live app/elm/Main.elm --output=public/main.js --dir=public --open --pushstate",
+    "css": "postcss --watch --config ./postcss-config.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
     "tachyons-custom": "^4.5.4"
   },
   "devDependencies": {
-    "chokidar-cli": "^1.2.0",
+    "autoprefixer": "^6.7.3",
+    "elm-live": "^2.7.4",
+    "postcss-clean": "^1.0.2",
     "postcss-cli": "^2.6.0",
     "postcss-custom-media": "^5.0.1",
     "postcss-custom-properties": "^5.0.2",

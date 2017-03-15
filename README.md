@@ -38,15 +38,11 @@ This boilerplate is a relatively minimal setup, designed to get you off to a qui
 
 ## How?
 
-#### For Elm: `chokidar`
+#### For Elm: [`elm live`](https://github.com/tomekwi/elm-live)
 
-One thing I dislike about some SPA (single page app) boilerplates is how complex the setup is (large and confusing `webpack.config.js` files, opinionated file structures etc). Although it may seem like more work in the long run, increasing the complexity of your build environment as your project grows I feel is much more sustainable.
+> A flexible dev server for Elm, Live reload included!
 
-[`chokidar`](https://github.com/paulmillr/chokidar) I think is a nice middle ground (inspired by [this article](https://maximilianhoffmann.com/posts/how-to-compile-elm-files-on-save))
-
-> Chokidar - "A neat wrapper around node.js fs.watch / fs.watchFile / fsevents"
-
-Chokidar will watch for changes in your elm files and recompile on save
+elm live compiles elm code, watches for changes and serves the app from the `public` folder on `localhost:8000` :sparkles: :ok_hand:
 
 #### For Tachyons: `postCSS`
 
@@ -62,21 +58,21 @@ The boilerplate uses [`postCSS`](http://postcss.org/) to bundle all the individu
 To compile the CSS run:
 
 ```sh
-$ npm run watch:css
+$ npm run css
 ```
 
-To compile the Elm run:
+To compile the Elm and run the dev server run:
 
 ```sh
-$ npm run watch:elm
+$ npm run elm
 ```
 
-To compile both at the same time run:
+To run both at the same time run:
 
 ```sh
-$ npm run watch:css-elm
+$ npm run watch
 ```
 
-and then open `public/index.html` in your browser to see the app running
+the browser will open if there are no errors in your elm app and load `localhost:8000` with your app running
 
 Contributions / suggestions are welcome, please leave an [issue](https://github.com/andrewMacmurray/elm-tachyons-boilerplate/issues)

@@ -3,7 +3,6 @@
 @custom-media --breakpoint-large screen and (min-width: 60em);
 
 :root {
-
   --sans-serif: lato, 'helvetica neue', helvetica, arial;
   --serif: georgia, serif;
   --code: consolas, monaco, monospace;

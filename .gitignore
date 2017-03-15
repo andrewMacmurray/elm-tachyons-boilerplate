@@ -37,5 +37,5 @@ jspm_packages
 .node_repl_history
 
 elm-stuff
-public/style.css
-public/app.js
+public/style.min.css
+public/main.js

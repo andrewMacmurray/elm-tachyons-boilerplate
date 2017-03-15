@@ -46,5 +46,6 @@
 @import 'tachyons-custom/src/_hovers';
 @import 'tachyons-custom/src/_z-index';
 
-/* custom variables */
+/* custom */
 @import './_variables';
+@import './_custom';
