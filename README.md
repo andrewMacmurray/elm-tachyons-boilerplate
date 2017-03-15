@@ -44,7 +44,7 @@ This boilerplate is a relatively minimal setup, designed to get you off to a qui
 
 elm live compiles elm code, watches for changes and serves the app from the `public` folder on `localhost:8000` :sparkles: :ok_hand:
 
-#### For Tachyons: `postCSS`
+#### For Tachyons: [`postCSS`](http://postcss.org/)
 
 > PostCSS - "A tool for transforming CSS with JavaScript"
 
