@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "npm run live & npm run css",
-    "live": "elm-live app/elm/Main.elm --output=public/main.js --dir=public --open --pushstate",
+    "live": "elm-live app/elm/Main.elm --output=public/main.js --dir=public --open --debug --pushstate",
     "css": "postcss --watch --config ./postcss-config.js"
   },
   "repository": {
