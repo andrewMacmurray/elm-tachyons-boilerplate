@@ -23,6 +23,10 @@
   --line-height-solid: 1;
   --line-height-title: 1.25;
   --line-height-copy: 1.5;
+  
+  --measure: 30em;
+  --measure-narrow: 20em;
+  --measure-wide: 34em;
 
   --spacing-none: 0;
   --spacing-extra-small: .25rem;
