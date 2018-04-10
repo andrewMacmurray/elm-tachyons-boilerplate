@@ -36,6 +36,8 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
+package-lock.json
+
 elm-stuff
 public/style.min.css
 public/main.js

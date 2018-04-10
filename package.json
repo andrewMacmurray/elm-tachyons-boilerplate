@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "npm run elm-dev & npm run css-dev",
     "build": "npm run elm-build && npm run css-build",
-    "elm-build": "elm-make app/elm/Main.elm --output=public/main.js",
+    "elm-build": "elm-make src/elm/Main.elm --output=public/main.js",
     "css-build": "postcss --config postcss-config.js",
-    "elm-dev": "elm-live app/elm/Main.elm --output=public/main.js --dir=public --open --debug --pushstate",
+    "elm-dev": "elm-live src/elm/Main.elm --output=public/main.js --dir=public --open --debug --pushstate",
     "css-dev": "postcss --watch --config postcss-config.js"
   },
   "repository": {

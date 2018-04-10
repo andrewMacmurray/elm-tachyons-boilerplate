@@ -69,4 +69,18 @@ $ npm run build
 
 In dev mode the browser will open if there are no compile errors, and show `localhost:8000` with your app running
 
+## Testing
+
+An elm test setup has been added to the `tests` directory, to run make sure you have `elm-test` cli installed
+
+```sh
+$ npm install -g elm-test
+```
+
+and run
+
+```sh
+$ elm test
+```
+
 Contributions / suggestions are welcome, please leave an [issue](https://github.com/andrewMacmurray/elm-tachyons-boilerplate/issues)

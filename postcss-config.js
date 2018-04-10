@@ -1,5 +1,5 @@
 module.exports = {
-  input: 'app/css/index.css',
+  input: 'src/css/index.css',
   output: 'public/style.min.css',
   use: [
     'autoprefixer',

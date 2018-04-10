@@ -4,7 +4,7 @@
     "repository": "https://github.com/andrewMacmurray/elm-tachyons-boilerplate.git",
     "license": "MIT",
     "source-directories": [
-        "app/elm"
+        "src/elm"
     ],
     "exposed-modules": [],
     "dependencies": {
