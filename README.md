@@ -50,7 +50,7 @@ elm live compiles elm code, watches for changes and serves the app from the `pub
 
 Tachyons has some fantastic default styles, but sometimes you want to customise those defaults.
 
-The boilerplate uses [`postCSS`](http://postcss.org/) to bundle all the individual tachyons modules together in `app/css/index.css` and apply custom variables from the other files in `app/css/`. The boilerplate uses a fork of Tachyons called [Tachyons Custom](https://github.com/tachyons-css/tachyons-custom) to give easy access to all the css variables (like colors, widths etc).
+The boilerplate uses [`postCSS`](http://postcss.org/) to bundle all the individual tachyons modules together in `src/css/index.css` and apply custom variables from the other files in `src/css/`. The boilerplate uses a fork of Tachyons called [Tachyons Custom](https://github.com/tachyons-css/tachyons-custom) to give easy access to all the css variables (like colors, widths etc).
 
 
 ## Get Started
