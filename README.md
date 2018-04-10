@@ -1,16 +1,16 @@
 # Elm Tachyons Boilerplate
 
-A simple setup for two fantastically functional frontend technologies
+Simple setup for Elm and Tachyons
 
 ## Why?
 
-[Elm](http://elm-lang.org/) and [Tachyons](http://tachyons.io/) are both brilliant technologies to build robust and beautiful UIs
+[Elm](http://elm-lang.org/) and [Tachyons](http://tachyons.io/) are great for building UIs
 
 > Tachyons - "Create fast loading, highly readable, and 100% responsive interfaces with as little css as possible."
 
 > Elm - "A delightful language for reliable webapps."
 
-They also both have *very* quick start setups (which is great)
+Both also have low setup requirements to start developing with
 
 for elm:
 
@@ -28,11 +28,11 @@ add this to your html file
 <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
 ```
 
-Super simple right?
+These setups are great for playing around with ideas, but once you need more control you're left with a few caveats
 
-However
-
-One problem I encountered was once you've played around a bit with the elm-reactor and want to start getting serious about building something there's a bit more setup involved (for both technologies)
++ elm reactor doesn't support adding ports (i.e. no external JavaScript)
++ adding a custom stylesheet means appending it at runtime inside the body
++ customising tachyons properties like colors and spacing means manually overriding classes
 
 This boilerplate is a relatively minimal setup, designed to get you off to a quick start using both of them together but with finer control over customising each
 
@@ -40,39 +40,33 @@ This boilerplate is a relatively minimal setup, designed to get you off to a qui
 
 #### For Elm: [`elm live`](https://github.com/tomekwi/elm-live)
 
-> A flexible dev server for Elm, Live reload included!
+> A flexible dev server for Elm, Live reload included
 
-elm live compiles elm code, watches for changes and serves the app from the `public` folder on `localhost:8000` :sparkles: :ok_hand:
+elm live compiles elm code, watches for changes and serves the app from the `public` folder on `localhost:8000`
 
 #### For Tachyons: [`postCSS`](http://postcss.org/)
 
 > PostCSS - "A tool for transforming CSS with JavaScript"
 
-Tachyons has some fantastic default styles, but changing some of them is not as straightforward as adding a script tag.
+Tachyons has some fantastic default styles, but sometimes you want to customise those defaults.
 
-The boilerplate uses [`postCSS`](http://postcss.org/) to bundle all the individual tachyons modules together in `app/css/main.css` and apply custom variables from the other files in `app/css/`. The boilerplate uses a fork of Tachyons called [Tachyons Custom](https://github.com/tachyons-css/tachyons-custom) to give easy access to all the css variables (like colors, widths etc).
+The boilerplate uses [`postCSS`](http://postcss.org/) to bundle all the individual tachyons modules together in `app/css/index.css` and apply custom variables from the other files in `app/css/`. The boilerplate uses a fork of Tachyons called [Tachyons Custom](https://github.com/tachyons-css/tachyons-custom) to give easy access to all the css variables (like colors, widths etc).
 
 
 ## Get Started
 
-To compile the CSS run:
+Run css and elm in watch mode:
 
 ```sh
-$ npm run css
+$ npm run dev
 ```
 
-To compile the Elm and run the dev server run:
+Build css and elm bundles once:
 
 ```sh
-$ npm run elm
+$ npm run build
 ```
 
-To run both at the same time run:
-
-```sh
-$ npm run watch
-```
-
-the browser will open if there are no errors in your elm app and load `localhost:8000` with your app running
+In dev mode the browser will open if there are no compile errors, and show `localhost:8000` with your app running
 
 Contributions / suggestions are welcome, please leave an [issue](https://github.com/andrewMacmurray/elm-tachyons-boilerplate/issues)

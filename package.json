@@ -4,9 +4,12 @@
   "description": "A simple setup for two fantastically functional frontend technologies",
   "main": "index.js",
   "scripts": {
-    "watch": "npm run live & npm run css",
-    "live": "elm-live app/elm/Main.elm --output=public/main.js --dir=public --open --debug --pushstate",
-    "css": "postcss --watch --config ./postcss-config.js"
+    "dev": "npm run elm-dev & npm run css-dev",
+    "build": "npm run elm-build && npm run css-build",
+    "elm-build": "elm-make app/elm/Main.elm --output=public/main.js",
+    "css-build": "postcss --config postcss-config.js",
+    "elm-dev": "elm-live app/elm/Main.elm --output=public/main.js --dir=public --open --debug --pushstate",
+    "css-dev": "postcss --watch --config postcss-config.js"
   },
   "repository": {
     "type": "git",
