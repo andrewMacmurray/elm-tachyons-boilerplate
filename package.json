@@ -26,7 +26,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.7.3",
-    "elm-live": "^2.7.4",
+    "elm-live": "^2.7.5",
+    "elm-test": "^0.18.12",
     "postcss-clean": "^1.0.2",
     "postcss-cli": "^2.6.0",
     "postcss-custom-media": "^5.0.1",
