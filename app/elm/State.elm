@@ -1,4 +1,4 @@
-module Update exposing (..)
+module State exposing (..)
 
 import Model exposing (..)
 
@@ -13,3 +13,8 @@ update msg model =
     case msg of
         NoOp ->
             model ! []
+
+
+subscriptions : Model -> Sub Msg
+subscriptions _ =
+    Sub.none
